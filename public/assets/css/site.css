@@ -39,3 +39,29 @@
 @media(max-width:900px){
   .hero{display:block}
 }
+
+/* Company logos: never crop or force into a fixed 68px frame. */
+.offer-card{
+  grid-template-rows:auto auto auto 46px;
+}
+.logo-box{
+  width:100%;
+  min-height:92px;
+  height:auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 16px;
+  overflow:visible;
+  border-radius:12px;
+}
+.logo-box img{
+  display:block!important;
+  width:auto!important;
+  height:auto!important;
+  max-width:100%!important;
+  max-height:72px!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  margin:auto!important;
+}
